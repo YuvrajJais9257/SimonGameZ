@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thank You</title>
+    <link rel="icon" href="Icons\favicon_io\android-chrome-512x512.png">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 48px;
+            text-shadow: 3px 3px 5px #ff6b6b;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .thank-you-page {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thank-you-title {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 5px #ff6b6b;
+        }
+
+        .thank-you-text {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .thank-you-video {
+            max-width: 600px;
+            margin-top: 30px;
+        }
+
+        .play-again-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px #ff6b6b;
+        }
+
+        .play-again-button:hover {
+            background-color: #f64848;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .thank-you-title {
+                font-size: 36px;
+            }
+
+            .thank-you-text {
+                font-size: 20px;
+            }
+
+            .thank-you-video {
+                max-height: 300px;
+            }
+
+            .play-again-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thank-you-page">
+        <h1 class="thank-you-title">Thank You for Playing My Game</h1>
+        <p class="thank-you-text">Your support means a lot to me!</p>
+        <video class="thank-you-video" controls autoplay muted>
+            <source src="thankyou.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="simon.html" class="play-again-button">Play Again</a>
+    </div>
+</body>
+
+</html>
